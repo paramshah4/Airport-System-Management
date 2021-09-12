@@ -1,10 +1,10 @@
 import psycopg2, sys, os
 import my_queries
 
-db_name = '201701073'
-db_user = '201701073'
+db_name = '201701413'
+db_user = '201701413'
 db_host = '10.100.71.21'
-db_pass = 'purvilpm@6'
+db_pass = 'paramshah@144'
 db_port = '5432'
 
 conn = psycopg2.connect(database = db_name, user = db_user, password = db_pass, host = db_host, port = db_port)
