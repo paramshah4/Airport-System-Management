@@ -14,5 +14,8 @@
   - `"execute"`: runs custom SQL from `event["query"]`
   - `"query"`: runs a predefined query by `event["query_id"]` with `event["params"]`
 
-## Deploy
-- Package for AWS Lambda with psycopg2-binary dependency included
+## Deploy (Terraform)
+- Terraform files are in `infra/`
+- Initialize: `cd infra && terraform init -backend-config=<your-backend-config>`
+- Plan: `terraform plan -var="environment=beta" -var="db_name=..." -var="db_user=..." -var="db_host=..." -var="db_pass=..."`
+- Apply: `terraform apply` (requires `lambda_package.zip` at repo root)
