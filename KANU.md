@@ -24,4 +24,5 @@
 
 ## CI/CD (GitHub Actions)
 - Beta deployment: `.github/workflows/beta.yml` triggers on PRs to `main`
+- Prod deployment: `.github/workflows/prod.yml` triggers on push to `main` (i.e., merged PRs)
 - Requires GitHub secrets: `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `TF_STATE_BUCKET`, `DB_NAME`, `DB_USER`, `DB_HOST`, `DB_PASS`, `DB_PORT`
