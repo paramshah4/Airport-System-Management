@@ -1,0 +1,5 @@
+aws_region       = "us-east-1"
+db_name          = "airport_atc"
+db_username      = "airport_admin"
+db_password      = "CHANGE_ME"
+environment      = "dev"
