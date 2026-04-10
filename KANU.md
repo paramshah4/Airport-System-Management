@@ -5,6 +5,7 @@
 ### Terraform Infrastructure
 - Copy `infrastructure/terraform.tfvars.example` to `infrastructure/terraform.tfvars` and update values (especially `db_password`)
 - Run `terraform init` in `infrastructure/` directory to initialize providers
+- Optional: Run `terraform fmt -check -diff` to validate formatting
 
 ## Run
 
